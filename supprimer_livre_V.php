@@ -13,7 +13,7 @@
     <p>Êtes-vous sûr de vouloir supprimer ce livre ?</p>
 
     <form action="supprimer_livre_C.php" method="get">
-        <input type="hidden" name="id" value="<?php echo $livre['id']; ?>">
+        <input type="hidden" name="id" value="<?php echo $livreId = $_GET['id']; ?>">
         <input type="submit" name="supprimer_livre" value="Supprimer Livre">
     </form>
 

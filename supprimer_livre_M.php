@@ -5,7 +5,7 @@ $id = isset($_GET['id']) ? $_GET['id'] : null;
 
 try {
     if ($id) {
-        $sql = "DELETE FROM livres WHERE id = :id";
+        $sql = "DELETE FROM article WHERE id = :id";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
 
@@ -18,5 +18,4 @@ try {
     echo "Erreur lors de la suppression du livre : " . $e->getMessage();
 }
 
-echo "ID du livre non spécifié ou erreur lors de la suppression.";
 ?>

@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['modifier_livre'])) {
         $prix = $_POST['prix'];
         $stock = $_POST['stock'];
 
-        $sql = "UPDATE livres SET titre = :titre, auteur = :auteur, id_genre = :id_genre, annee_publication = :annee_publication, prix = :prix, stock = :stock WHERE id = :id";
+        $sql = "UPDATE article SET titre = :titre, auteur = :auteur, id_genre = :id_genre, annee_publication = :annee_publication, prix = :prix, stock = :stock WHERE id = :id";
         $stmt = $conn->prepare($sql);
 
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);

@@ -15,9 +15,6 @@ if (empty($_SESSION['panier'])) {
             echo '<li>';
             // Affichez les détails de l'article
             echo "Titre : " . $articleDetail['titre'] . "<br>";
-            echo "Auteur : " . $articleDetail['auteur'] . "<br>";
-            echo "Genre : " . $articleDetail['nom'] . "<br>";
-            echo "Année de publication : " . $articleDetail['annee_publication'] . "<br>";
             echo "Prix : " . $articleDetail['prix'] . "<br>";
             // Affichez la quantité
             echo "Quantité : " . $item['quantity'] . "<br>";
