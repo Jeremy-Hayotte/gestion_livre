@@ -1,0 +1,60 @@
+/* Import de la police depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Application de la police à divers éléments */
+body, .livre-titre, .livre-auteur, .en-savoir-plus {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Conteneur pour les livres en grille */
+.livres-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 à 4 éléments par ligne en fonction de la largeur */
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+/* Style de base pour chaque livre */
+.livre {
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour l'image du livre */
+.livre-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Style pour le titre du livre */
+.livre-titre {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* Style pour le nom de l'auteur */
+.livre-auteur {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Style pour le lien "En savoir plus" */
+.en-savoir-plus {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.en-savoir-plus:hover {
+  background-color: #0056b3;
+}

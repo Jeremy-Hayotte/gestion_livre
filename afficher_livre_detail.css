@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Reset CSS */
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* background-color: #f2f2f2; */
+  }
+  
+   .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 40px auto;
+  }
+  
+  .book-details {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      overflow: hidden;
+  }
+  
+  .book-image {
+      width: 400px;
+      height: auto;
+  }
+  
+  .book-info {
+      padding: 20px;
+  }
+  
+  .book-info h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+  }
+  
+  .book-info p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 8px;
+  }
+  
+  .not-found {
+      font-size: 18px;
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: #f44336;
+  } */
+  
+  
+  .parent {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      }
+  
+      .div1 { 
+          grid-area: 1 / 1 / 4 / 6;
+          background-color: red;
+       }
+  
+       .div1 img {
+          width: 300px;
+          height: auto;
+       }
+  
+      .div2 { 
+          grid-area: 4 / 1 / 6 / 4;
+          background-color: yellow;
+       }
+  
+      .div3 { 
+          grid-area: 4 / 4 / 6 / 6;
+          background-color: blue;
+       }
